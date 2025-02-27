@@ -150,3 +150,10 @@ Before OIDC, GitHub Actions used **IAM user access keys**, which had several ris
 ---
 
 🚀 This CloudFormation-based approach provides a **secure, automated, and scalable** AWS authentication mechanism for GitHub Actions using OIDC.  
+
+---
+Ref
+- https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services
+- https://github.blog/changelog/2023-06-27-github-actions-update-on-oidc-integration-with-aws/
+
+
