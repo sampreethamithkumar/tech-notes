@@ -77,6 +77,8 @@ Outputs:
     Value: !GetAtt GitHubActionsRole.Arn
 ```
 
+To understand thumbprint [click here](./thumbprint.md)
+
 ### **Step 2: Deploy the Stack**
 Run the following AWS CLI command, replacing `<your-org>/<your-repo>`:
 
