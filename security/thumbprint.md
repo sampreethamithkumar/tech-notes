@@ -19,13 +19,6 @@ To manually retrieve a thumbprint, you can use the following methods:
 openssl s_client -showcerts -connect oidc.provider.com:443 </dev/null 2>/dev/null | openssl x509 -fingerprint -sha256 -noout
 ```
 
-#### Using PowerShell (Windows)
-```powershell
-$cert = (New-Object System.Net.WebClient).DownloadData("https://oidc.provider.com")
-$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $cert
-$cert.Thumbprint
-```
-
 ### Thumbprint in AWS OIDC Role Assumption
 When setting up OIDC in AWS for authentication (e.g., GitHub Actions), AWS requires the thumbprint of GitHub’s OIDC certificate to verify its legitimacy before allowing role assumption.
 
